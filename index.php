@@ -19,6 +19,12 @@ session_start();
    include "modules/module_homepage/mod_homepage.php"
 ?>
 </main>
+<div class="centre">
+   <form action="components\pages\criminal.php">
+      <input type="submit" value="Find a criminal">                
+   </form>
+</div>
+
 <?php include 'components/footer/footer.html'; ?>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
