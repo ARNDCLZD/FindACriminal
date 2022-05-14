@@ -17,7 +17,7 @@ $result = sparql_query( $sparql );
 if( !$result ) { print sparql_errno() . ": " . sparql_error(). "\n"; exit; }
 $fields = sparql_field_array( $result );
 $count=0;
-$rand=rand(0,sparql_num_rows($result));
+$rand=rand(1,sparql_num_rows($result));
 echo($rand);
 while( $row = sparql_fetch_array( $result ) )
 {

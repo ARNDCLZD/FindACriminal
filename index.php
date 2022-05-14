@@ -14,15 +14,11 @@ session_start();
 <header class="">
    <?php include "components/header/header.html";?>
 </header>
-<main class="bg-dark">
+<main class="bg-danger">
 <?php
-   include "modules/module_homepage/mod_homepage.php"
+   include "modules\\module_homepage\\vue_homepage.php";
 ?>
 </main>
-   <form action="components\pages\criminal.php" class="text-center">
-      <input type="submit" value="Find a criminal">                
-   </form>
-
 <?php include 'components/footer/footer.html'; ?>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
