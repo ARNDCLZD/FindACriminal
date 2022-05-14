@@ -19,11 +19,9 @@ session_start();
    include "modules/module_homepage/mod_homepage.php"
 ?>
 </main>
-<div class="centre">
-   <form action="components\pages\criminal.php">
+   <form action="components\pages\criminal.php" class="text-center">
       <input type="submit" value="Find a criminal">                
    </form>
-</div>
 
 <?php include 'components/footer/footer.html'; ?>
 </div>
