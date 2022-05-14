@@ -1,13 +1,26 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="" href="#"><h3>FindACriminal</h3></a>
-    <div class="">
-        <div>
-            <form action="components\pages\inscription.php">
-                <input type="submit" value="Sign up">                
-            </form>
-            <form action="components\pages\connexion.php">
-                <input type="submit" value="Sign in">                
-            </form>
-        </div>
+<a href="#" class="text-center"><h3>FindACriminal</h3></a>
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+    <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <div id="navbarContent" class="collapse navbar-collapse">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><form action="components\pages\inscription.php">
+            <input type="submit" value="Sign up" class="btnsign">                
+        </form></li>
+        <li class="nav-item"><form action="components\pages\connexion.php">
+            <input type="submit" value="Sign in" class="btnsign">                
+        </form> </li>
+      </ul>
     </div>
-</nav>
+  </nav>
+
+           
+            
+            
+
+<style>
+    .btnsign{
+        margin : 5px;
+    }
+</style>
