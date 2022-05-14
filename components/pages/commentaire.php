@@ -11,7 +11,7 @@
 <?php
     $fraudster = isset($_GET["fraudster"]) ? $_GET["fraudster"] : false;
     echo '  <form method="POST" action="index.php?action=addComment&fraudster='.$fraudster.'">
-                <textarea name="commentaire" placeholder="Votre commentaire..."></textarea><br />
+                <textarea class="test" cols="205" name="commentaire" placeholder="Votre commentaire..."></textarea><br />
                 <input type="submit" value="Poster mon commentaire" name="submit_commentaire" />
             </form>'
         
@@ -37,3 +37,13 @@
             echo "<b>".$tab['idAuthor']." : </b>".$tab['content']."<br>";
     } 
 ?>
+
+<style>
+    .test {
+        resize:none;
+    }
+    .div {
+        background-color: #dc3545;
+        color: #fec007;
+    }
+</style>

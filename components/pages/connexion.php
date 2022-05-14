@@ -1,5 +1,13 @@
 <?php include('../../database.php') ?>
 
+<?php
+	$action = isset($_GET["action"]) ? $_GET["action"] : false;
+	echo $action;
+	if($action == 'destroy'){
+		session_destroy();
+		header("Location: http://localhost/FindACriminal/index.php");
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>

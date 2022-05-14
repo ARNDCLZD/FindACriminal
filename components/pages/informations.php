@@ -20,8 +20,9 @@
 
         $result = sparql_query( $sparql );
         $row = sparql_fetch_array( $result );
-        echo "<h1>".$row["name"]."</h1>";
-        echo "<p>".$row["abstract"]."</p>";
+        echo "<h1 class='text-center'>".$row["name"]."</h1>";
+        echo "<p class='text-center'>".$row["abstract"]."</p>";
+        include "./components/pages/commentaire.php";
     }    
     else echo "<h1>Press the button !</h1>"
 ?>
